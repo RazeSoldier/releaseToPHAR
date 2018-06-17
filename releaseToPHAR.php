@@ -22,9 +22,9 @@ define( 'TMPDIR', 'tmp/' );
 define( 'PHAR_NAME', 'release.phar' );
 
 // Config @{
-$projectURL = '';
-$composerPath = '';
-$bootstrapFilename = '';
+$projectURL = ''; // The git remote address
+$composerPath = ''; // Manually specify Composer's execution file, you can also leave blank
+$bootstrapFilename = ''; // Set bootstrap of the PHAR file
 // @}
 
 register_shutdown_function( 'shutdown' );
