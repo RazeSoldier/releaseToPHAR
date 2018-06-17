@@ -29,7 +29,7 @@ $bootstrapFilename = ''; // Set bootstrap of the PHAR file
 
 register_shutdown_function( 'shutdown' );
 echo "Downloading source code...\n";
-getSourceCode($projectURL);
+getSourceCode( $projectURL );
 chdir( TMPDIR );
 if ( installLib( $composerPath ) !== 0 ) {
     throw new RuntimeException( 'Unable to install dependencies', 2 );
